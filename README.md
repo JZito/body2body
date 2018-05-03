@@ -12,6 +12,13 @@ Requires Ubuntu 16.04, [OpenPose](https://github.com/CMU-Perceptual-Computing-La
 
 ### Create images from your videos
 
+Clone this repo
+
+```
+git clone git@github.com:JZito/body2body.git
+```
+
+
 You only need OpenCV to convert your source video to image frames and vice-versa. The simplest way to install OpenCV is with [Anaconda](http://www.anaconda.org)
 
 ```
