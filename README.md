@@ -47,7 +47,7 @@ and use OpenPose to extract the skeleton from your directory of images. Use ```t
 ```
 
 We use the flags ```--disable_blending``` to remove the original source and give us our pure skeleton on a black background and ```--face --hand``` to get a skeleton that includes, not surprisingly, face and hands.
-(https://github.com/JZito/body2body/blob/master/images/skeleton_pose.png "Posed image")
+![alt text](https://github.com/JZito/body2body/blob/master/images/skeleton_pose.png "Posed image")
 
 
 ### Launch a screen
