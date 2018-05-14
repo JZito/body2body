@@ -2,9 +2,11 @@
 
 Making someone someone else
 
+![alt text](https://github.com/JZito/body2body/blob/master/images/animation.gif "Body2Body")
+
 ## How
 
-These instructions will allow you to create a hi-def digital puppet from existing source video. You can transpose someone else's likeness, essentially their "puppet", onto your own video performance "puppeteer".
+These instructions will allow you to create a hi-def digital puppet from existing source video using Generative Adversarial Networks. You can transpose someone else's likeness, essentially their "puppet", onto your own video performance "puppeteer" with the power of neural nets.
 
 ### Prerequisites
 
