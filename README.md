@@ -102,7 +102,7 @@ python test.py --name project_name --how_many 1000
 
 ```how_many``` is how many images you want to run your test on. Check the ```results``` directory to see your model's output.
 
-###Make a video
+### Make a video
 
 When your model is done outputting images, you can remove your input labels from your results dir.
 
