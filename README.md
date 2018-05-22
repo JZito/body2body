@@ -115,7 +115,7 @@ python move_input_labels.py --dir pix2pixHD/results/project_name/test_latest/ima
 Once your directory is left with its synthesized images, turn the contents of that directory into a video.
 
 ```
-python create_video.py --dir pix2pixHD/results/project_name/test_latest/images --output puppeteer.mp4 --fps 30 --ext jpg
+python images_to_video.py --dir pix2pixHD/results/project_name/test_latest/images --output puppeteer.mp4 --fps 30 --ext jpg
 ```
 
 Congratulations, you are now a neural puppeteer. Make something weird. 
