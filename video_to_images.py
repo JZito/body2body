@@ -12,7 +12,8 @@ def main():
     success = True
     path = os.getcwd() + "/" + args.directory + "/"
     while success:
-      cv2.imwrite(os.path.join(path,"frame%d.jpg" % count), image)     # save frame as JPEG file      
+      fn = 'frame'+str(count).zfill(8)+'.jpg'
+      cv2.imwrite(os.path.join(path,fn), image)     # save frame as JPEG file      
       success,image = vidcap.read()
       print('Read a new frame: ', success)
       count += 1
