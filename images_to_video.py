@@ -2,7 +2,6 @@ import cv2
 import argparse
 import os
 
-
 def main():
     dir_path = os.getcwd()+'/'+args.directory+'/'
     ext = args.extension
@@ -11,7 +10,10 @@ def main():
     images = []
     for f in os.listdir(dir_path):
         if f.endswith(ext):
-            images.append(f)
+            if args.file_flag in f:
+                images.append(f)
+    images.sort()
+    print(images)
 
     # Determine the width and height from the first image
     image_path = os.path.join(dir_path, images[0])
@@ -44,6 +46,7 @@ if __name__ == '__main__':
     parser.add_argument("--output", dest='output',  required=False, default='output.mp4', help="output video file name")
     parser.add_argument( "--dir", dest='directory',  required=False, default='.', help="image directories")
     parser.add_argument("--fps",  dest='fps', type=int, required=False, default='24', help="frames per second")
+    parser.add_argument("--file_flag",  dest='file_flag', type=str, required=False, default='', help="string specifying which files to use")
     args = parser.parse_args()
 
     main()

@@ -106,16 +106,10 @@ python test.py --name project_name --how_many 1000
 
 ### Make a video
 
-When your model is done outputting images, you can remove your input labels from your results dir.
+When your model is done outputting images, you can turn the contents of that directory into a video.
 
 ```
-python move_input_labels.py --dir pix2pixHD/results/project_name/test_latest/images
-```
-
-Once your directory is left with its synthesized images, turn the contents of that directory into a video.
-
-```
-python images_to_video.py --dir pix2pixHD/results/project_name/test_latest/images --output puppeteer.mp4 --fps 30 --ext jpg
+python images_to_video.py --dir pix2pixHD/results/project_name/test_latest/images --output puppetry_performance.mp4 --fps 30 --ext jpg --file_flag synthesized_image
 ```
 
 Congratulations, you are now a neural puppeteer. Make something weird. 
@@ -129,4 +123,4 @@ Congratulations, you are now a neural puppeteer. Make something weird.
 ## Acknowledgments
 
 * [the Nvidia team](https://github.com/NVIDIA/pix2pixHD)
-* Dat Tran for his [face2face-demo](https://github.com/datitran/face2face-demo) and Karol Majek for the inspiration in mentioning OpenPose in his [face2face-demo](https://github.com/karolmajek/face2face-demo) fork.github.com/datitran/face2face-demo) and Karol Majek for the inspiration in mentioning OpenPose in his [face2face-demo](https://github.com/karolmajek/face2face-demo) fork.
+* Dat Tran for his [face2face-demo](https://github.com/datitran/face2face-demo) and Karol Majek for the inspiration in mentioning OpenPose in his [face2face-demo](https://github.com/karolmajek/face2face-demo) fork.
